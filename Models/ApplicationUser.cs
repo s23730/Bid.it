@@ -14,5 +14,6 @@ namespace Bid.it.Models
         public decimal Money { get; set; }
 
         public virtual ICollection<Auction> Auctions { get; set; }
+        public virtual ICollection<PurchaseHistory> PurchaseHistories { get; set; }
     }
 }

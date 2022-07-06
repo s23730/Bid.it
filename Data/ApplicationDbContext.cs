@@ -12,6 +12,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 
     public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     public DbSet<Auction> Auctions { get; set; }
+    public DbSet<PurchaseHistory> PurchaseHistories { get; set; }
     protected internal virtual void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ApplicationUser>().ToTable("ApplicationUser");

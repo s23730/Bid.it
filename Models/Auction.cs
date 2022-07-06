@@ -38,5 +38,6 @@ namespace Bid.it.Models
         public decimal Price { get; set; }
 
         public bool IsAvailable { get; set; }
+        public virtual ICollection<PurchaseHistory> PurchaseHistories { get; set; }
     }
 }
